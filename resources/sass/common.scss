@@ -71,6 +71,10 @@
   color: $booleanBlue;
 }
 
+.color_boolean_orange {
+  color: $booleanOrange;
+}
+
 /*REGOLE PRINCIPALI ---> componenti*/
 
 .btn_boolean {
@@ -82,5 +86,17 @@
 .btn_orange {
   padding: 15px 30px;
   color: white;
-  background: orange;
+  font-size: $biggerFontSize;
+  background: $booleanOrange;
+}
+
+.feature {
+  h1,h2,h3,h4, h5, h6, img, p {
+    margin-bottom: 3rem;
+  }
+  &.smaller_margin {
+    h1,h2,h3,h4, h5, h6, img, p {
+      margin-bottom: 1.5rem;
+    }
+  }
 }

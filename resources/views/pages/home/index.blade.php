@@ -5,10 +5,10 @@
   <section class="claim container py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 pr-md-5">
+        <div class="col-md-6 feature pr-md-5">
           <h1>Diventa sviluppatore web</h1>
-          <img class="img-fluid d-block d-md-none my-5" src="https://www.boolean.careers/images/common/mac2x.png">
-          <p class="mb-5">
+          <img class="img-fluid d-block d-md-none" src="https://www.boolean.careers/images/common/mac2x.png">
+          <p>
             6 mesi di corso intensivo online in diretta per imparare da zero
             il mestiere di web developer e trovare un nuovo lavoro
             nelle aziende top del settore
@@ -37,7 +37,7 @@
 
   <section class="learning_path container py-5">
 
-    <div class="row six_months_developer mb-5">
+    <div class="row six_months_developer feature mb-5">
       <div class="col-md-6">
         <h2>6 mesi e sei sviluppatore</h2>
         <p>
@@ -50,10 +50,9 @@
       <div class="col-md-6"></div>
     </div>
 
-    <div class="row school_at_home">
+    <div class="row school_at_home feature">
       <div class="col-md-6">
         <img class="img-fluid" src="https://www.boolean.careers/images/live_coding/pc_blank.png">
-
       </div>
       <div class="col-md-6">
         <h2>Una vera scuola a casa tua</h2>
@@ -69,9 +68,9 @@
   </section>
 
   <section class="why_boolean container-fluid bg_boolean_grey py-5">
-    <div class="container">
+    <div class="container feature">
       <h2>Perché Boolean</h2>
-      <div class="row">
+      <div class="row feature smaller_margin">
         <div class="col-md-4">
           <img class="d-none d-md-block"src="https://www.boolean.careers/images/icons/home.svg" alt="">
           <h3>Impara da casa tua</h3>
@@ -120,7 +119,7 @@
     </div>
   </section>
 
-  <section class="career_change container py-5">
+  <section class="career_change container feature py-5">
     <div class="row">
       <div class="col-md-6 chart d-none d-md-block">
         <p>Posizioni vacanti Web Developer</p>
@@ -155,7 +154,7 @@
              che si ha è quella di entrare in una classe vera e propria.Un
              corso innovativo che mi ha stupito."
           </p>
-           <h5>Alessandro Biagini</h5>
+           <h5 class="color_boolean_orange">Alessandro Biagini</h5>
            <h6>Studente Boolean Classe #1 - Web Developer in Softec spa</h6>
 
         </div>
@@ -171,7 +170,7 @@
             lezione in diretta. Il corso ha corrisposto alle mie
             aspettative al 100%."
           </p>
-          <h5>Federico Losi</h5>
+          <h5 class="color_boolean_orange">Federico Losi</h5>
           <h6>Studente Boolean Classe #1 - Web Developer in Facile.it</h6>
         </div>
         <div class="col-md-4 d-none d-md-block">
@@ -184,9 +183,9 @@
 
   <section class="one_step_away container-fluid bg_boolean_blue py-5">
 
-    <div class="container text-center">
+    <div class="container text-center feature">
       <h2 class="text-white">Sei ad un passo dalla tua nuova professione</h2>
-      <h3 class="text-white">Scrivici, raccontaci la tua storia e scopriamo insieme se Boolean è la scelta giusta per te</h3>
+      <h4 class="text-white">Scrivici, raccontaci la tua storia e scopriamo insieme se Boolean è la scelta giusta per te</h4>
       <a class="btn_orange "href="">Inizia da qui</a>
 
     </div>

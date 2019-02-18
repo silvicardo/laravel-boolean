@@ -10661,7 +10661,7 @@ a.text-dark:focus {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Nunito", sans-serif;
   color: #1B3C59;
 }
@@ -10676,13 +10676,13 @@ a:hover {
 
 @media all and (max-width: 1149px) {
   * {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media all and (max-width: 768px) {
   * {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -10723,6 +10723,10 @@ a:hover {
   color: #1B3C59;
 }
 
+.color_boolean_orange {
+  color: #fd8d53;
+}
+
 /*REGOLE PRINCIPALI ---> componenti*/
 
 .btn_boolean {
@@ -10734,7 +10738,30 @@ a:hover {
 .btn_orange {
   padding: 15px 30px;
   color: white;
-  background: orange;
+  font-size: 1.3rem;
+  background: #fd8d53;
+}
+
+.feature h1,
+.feature h2,
+.feature h3,
+.feature h4,
+.feature h5,
+.feature h6,
+.feature img,
+.feature p {
+  margin-bottom: 3rem;
+}
+
+.feature.smaller_margin h1,
+.feature.smaller_margin h2,
+.feature.smaller_margin h3,
+.feature.smaller_margin h4,
+.feature.smaller_margin h5,
+.feature.smaller_margin h6,
+.feature.smaller_margin img,
+.feature.smaller_margin p {
+  margin-bottom: 1.5rem;
 }
 
 .claim h1 {
