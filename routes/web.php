@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//Rotte HomeController
+Route::get('/','HomeController@index')->name('homePage');
+Route::get('/corso','HomeController@corso')->name('corso');
+Route::get('/metodo','HomeController@metodo')->name('metodo');
+Route::get('/dopo-il-corso','HomeController@dopoIlCorso')->name('dopoIlCorso');
+Route::get('/faq','HomeController@faq')->name('faq');
+
+//Rotte StaticPagesController
+Route::get('/privacy-policy','StaticPagesController@privacyPolicy')->name('privacyPolicy');
+Route::get('/lavora-con-noi','StaticPagesController@lavoraConNoi')->name('lavoraConNoi');
