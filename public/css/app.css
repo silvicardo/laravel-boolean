@@ -10737,3 +10737,16 @@ a:hover {
   background: orange;
 }
 
+.claim h1 {
+  font-size: 4.5rem;
+  color: #61ce4e;
+}
+
+.claim p {
+  font-size: 1.6rem;
+}
+
+.hiring_partners img {
+  margin: 30px;
+}
+

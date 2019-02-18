@@ -5,17 +5,17 @@
   <section class="claim container py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 pr-md-5">
           <h1>Diventa sviluppatore web</h1>
-          <img class="img-fluid d-block d-md-none" src="https://www.boolean.careers/images/common/mac2x.png">
-          <p>
+          <img class="img-fluid d-block d-md-none my-5" src="https://www.boolean.careers/images/common/mac2x.png">
+          <p class="mb-5">
             6 mesi di corso intensivo online in diretta per imparare da zero
             il mestiere di web developer e trovare un nuovo lavoro
             nelle aziende top del settore
           </p>
           <a class="btn_boolean text-uppercase">Scopri il corso</a>
         </div>
-        <div class="col-md-6 d-none d-md-block">
+        <div class="col-md-6 d-none d-md-flex align-items-center">
           <img class="img-fluid" src="https://www.boolean.careers/images/common/mac2x.png">
         </div>
       </div>
@@ -25,7 +25,7 @@
   <section class="hiring_partners container-fluid bg_boolean_blue py-5">
     <div class="container text-center">
       <h2 class="text-white">I nostri studenti sono stati assunti da</h2>
-      <div class="row flex-wrap flex-lg-nowrap justify-content-center">
+      <div class="row flex-wrap flex-xl-nowrap justify-content-center">
         <img class="img-fluid" src="https://www.boolean.careers/images/partners/facile_it.png">
         <img class="img-fluid" src="https://www.boolean.careers/images/partners/oneday.png">
         <img class="img-fluid" src="https://www.boolean.careers/images/partners/cayenne.png">

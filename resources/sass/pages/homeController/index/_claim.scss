@@ -1,4 +1,11 @@
 
 .claim {
 
+  h1 {
+    font-size: 4.5rem;
+    color: $booleanGreen;
+  }
+  p {
+    font-size: $xlFontSize;
+  }
 }
