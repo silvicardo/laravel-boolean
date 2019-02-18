@@ -11,6 +11,9 @@
 // Common Rules
 @import 'common';
 
-//Pages sections
+//Includes sections
 @import 'partials/_navbar';
 @import 'partials/_footer';
+
+//pagine
+@import 'partials/pages/pages';
