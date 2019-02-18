@@ -10663,11 +10663,13 @@ a.text-dark:focus {
   box-sizing: border-box;
   font-size: 14px;
   font-family: "Nunito", sans-serif;
+  color: #1B3C59;
 }
 
 a,
 a:hover {
   text-decoration: none;
+  color: #1B3C59;
 }
 
 /*REGOLE PRINCIPALI ---> fontSize Media Queries*/
@@ -10701,5 +10703,37 @@ a:hover {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+/*REGOLE PRINCIPALI ---> sfondo containers*/
+
+.bg_boolean_grey {
+  background-color: #E8EBF1;
+}
+
+.bg_boolean_blue {
+  background-color: #1B3C59;
+}
+
+.color_boolean_grey {
+  color: #E8EBF1;
+}
+
+.color_boolean_blue {
+  color: #1B3C59;
+}
+
+/*REGOLE PRINCIPALI ---> componenti*/
+
+.btn_boolean {
+  padding: 15px 30px;
+  border: 3px solid green;
+  border-radius: 4px;
+}
+
+.btn_orange {
+  padding: 15px 30px;
+  color: white;
+  background: orange;
 }
 

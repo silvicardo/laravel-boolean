@@ -6,10 +6,12 @@
  	box-sizing: border-box;
  	font-size: $defaultRemFontSize;
   font-family: $font-family-sans-serif;
+  color: $booleanBlue;
  }
 
  a, a:hover {
    text-decoration:none;
+   color: $booleanBlue;
  }
 
 
@@ -37,14 +39,48 @@
  	max-width: 100vw;
   height: auto;
  	overflow: auto;
+
 }
 
 #page_content {
   margin-top: $pageContainerTopMargin;
+
 }
 
 .position-absolute.center {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*REGOLE PRINCIPALI ---> sfondo containers*/
+
+.bg_boolean_grey {
+ background-color: $booleanGrey;
+}
+
+.bg_boolean_blue {
+  background-color: $booleanBlue;
+}
+
+.color_boolean_grey {
+ color: $booleanGrey;
+}
+
+.color_boolean_blue {
+  color: $booleanBlue;
+}
+
+/*REGOLE PRINCIPALI ---> componenti*/
+
+.btn_boolean {
+  padding: 15px 30px;
+  border: 3px solid green;
+  border-radius: 4px;
+}
+
+.btn_orange {
+  padding: 15px 30px;
+  color: white;
+  background: orange;
 }

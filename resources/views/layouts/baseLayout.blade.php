@@ -19,7 +19,7 @@
 
         @include('includes.navbar')
 
-        <div id="content">
+        <div id="page_content">
 
           @yield('content')
 
