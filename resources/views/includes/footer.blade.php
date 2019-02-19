@@ -6,21 +6,21 @@
       </div>
       <div class="col-md-3 d-flex justify-content-center align-items-center">
         <ul class="list-unstyled">
-          <li><a href="">ciao@boolean.careers</a></li>
-          <li><a href="">02-40331288</a></li>
-          <li><a href="">+39 327-9578239</a></li>
+          <li><a href="#">ciao@boolean.careers</a></li>
+          <li><a href="#">02-40331288</a></li>
+          <li><a href="#">+39 327-9578239</a></li>
         </ul>
       </div>
       <div class="col-md-3 d-flex justify-content-center align-items-center">
         <ul class="list-unstyled text-capitalize">
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Lavora con noi!</a></li>
+          <li><a href=" {{ route('privacyPolicy')}}">Privacy Policy</a></li>
+          <li><a href=" {{ route('lavoraConNoi') }}">Lavora con noi!</a></li>
         </ul>
       </div>
       <div class="col-md-3 d-flex justify-content-around align-items-center">
-        <a href=""><i class="fab fa-facebook"></i></a>
-        <a href=""><i class="fab fa-linkedin"></i></a>
-        <a href=""><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
   </div>

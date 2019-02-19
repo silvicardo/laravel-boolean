@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 feature pr-md-5">
-          <h1>Diventa sviluppatore web</h1>
+          <h1 class="text-center text-md-left">Diventa sviluppatore web</h1>
           <img class="img-fluid d-block d-md-none" src="https://www.boolean.careers/images/common/mac2x.png">
           <p>
             6 mesi di corso intensivo online in diretta per imparare da zero
@@ -45,7 +45,7 @@
            Niente teoria che rimane solo sui libri, impara skill pratiche che ti
             preparano ad entrare subito nel mondo del lavoro.
         </p>
-        <a class="btn_boolean text-uppercase">Scopri il corso</a>
+        <a href="{{ route('corso')}}" class="btn_boolean text-uppercase">Scopri il corso</a>
       </div>
       <div class="col-md-6"></div>
     </div>
@@ -61,7 +61,7 @@
         supporto individuale per la risoluzioni degli esercizi e una classe di
         studenti allo stesso livello, tutto nella nostra aula virtuale
         </p>
-        <a href="" class="btn_boolean text-uppercase">Scopri il metodo</a>
+        <a href="{{ route('metodo') }}" class="btn_boolean text-uppercase">Scopri il metodo</a>
       </div>
     </div>
 
@@ -137,7 +137,7 @@
 
       <img class="img-fluid d-none d-md-block" src="https://www.boolean.careers/images/partners/loghi.png">
 
-      <a href="" class="btn_boolean text-uppercase">Dopo il corso</a>
+      <a href="{{ route('dopoIlCorso') }}" class="btn_boolean text-uppercase">Dopo il corso</a>
       </div>
     </div>
   </section>
@@ -148,7 +148,7 @@
       <h2>Dicono di noi</h2>
       <div class="row student mb-5">
         <div class="col-md-8">
-          <img class="img-fluid d-block d-md-none" src="https://www.boolean.careers/images/video_posters/BiaginiWeb.png" alt="">
+          <img class="img-fluid d-block d-md-none my-5" src="https://www.boolean.careers/images/video_posters/BiaginiWeb.png" alt="">
           <p>"Partendo da zero, in due settimane ho costruito il mio primo sito!
              Sono molto soddisfatto di aver scelto questo corso: l'impressione
              che si ha è quella di entrare in una classe vera e propria.Un
@@ -164,7 +164,7 @@
       </div>
       <div class="row flex-row-reverse student">
         <div class="col-md-8">
-          <img class="img-fluid d-block d-md-none" src="https://www.boolean.careers/images/video_posters/LosiWeb.png" alt="">
+          <img class="img-fluid d-block d-md-none my-5" src="https://www.boolean.careers/images/video_posters/LosiWeb.png" alt="">
           <p>"Le caratteristiche che mi hanno convinto ad iscrivermi sono state
             la possibilità di diventare al 100% Job Ready e il numero di ore di
             lezione in diretta. Il corso ha corrisposto alle mie
