@@ -8,12 +8,18 @@ class StaticPagesController extends Controller
 {
 
   public function privacyPolicy() {
-    return view('pages.static.privacyPolicy');
+
+    $title = 'Privacy Policy ';
+
+    return view('pages.static.privacyPolicy', compact('title'));
   }
 
 
   public function lavoraConNoi() {
-    return view('pages.static.lavoraConNoi');
+
+    $title = 'Lavora con noi';
+
+    return view('pages.static.lavoraConNoi', compact('title'));
   }
 
 }

@@ -8,19 +8,34 @@ class HomeController extends Controller
 {
 
     public function index() {
-      return view('pages.home.index');
+
+      $title = 'Home';
+
+      return view('pages.home.index', compact('title'));
     }
     public function corso() {
-      return view('pages.home.corso');
+
+      $title = 'Corso';
+
+      return view('pages.home.corso', compact('title'));
     }
     public function metodo() {
-      return view('pages.home.metodo');
+
+      $title = 'Metodo';
+
+      return view('pages.home.metodo', compact('title'));
     }
     public function dopoIlCorso() {
-      return view('pages.home.dopoIlCorso');
+
+      $title = 'Dopo il corso';
+
+      return view('pages.home.dopoIlCorso', compact('title'));
     }
     public function faq() {
-      return view('pages.home.faq');
+
+      $title = 'Faq';
+
+      return view('pages.home.faq', compact('title'));
     }
 
 }
