@@ -3,284 +3,285 @@
 @extends('layouts.baseLayout')
 
 @section('content')
-  <section class="privacy_policy container py-5">
-    <h1>Privacy Policy</h1>
-    <p>Lavoriamo per assicurare che la tua privacy sia protetta ogni volta che
-      utilizzi il nostro sito ed i nostri servizi. A tal fine abbiamo elaborato
-      un’informativa che spiega come vengono utilizzati e protetti
-      i tuoi dati personali
-    </p>
+<section class="privacy_policy main_content container py-5">
+  <h1>Privacy Policy</h1>
+  <p>Lavoriamo per assicurare che la tua privacy sia protetta ogni volta che
+    utilizzi il nostro sito ed i nostri servizi. A tal fine abbiamo elaborato
+    un’informativa che spiega come vengono utilizzati e protetti
+    i tuoi dati personali
+  </p>
 
 
-    <h5>Trattamento dei Dati Personali</h5>
-    <p>I Dati Personali e i Dati di Navigazione (di seguito definiti “Dati”)
-      vengono raccolti automaticamente dal sito web (di seguito: il “Sito”),
-       anche mediante sistemi automatizzati, o a seguito di inserimento volontario
-       dell’Utente o dall’Interessato. I dati sono trattati secondo le modalità di seguito riportate.
-    </p>
+  <h5>Trattamento dei Dati Personali</h5>
+  <p>I Dati Personali e i Dati di Navigazione (di seguito definiti “Dati”)
+    vengono raccolti automaticamente dal sito web (di seguito: il “Sito”),
+     anche mediante sistemi automatizzati, o a seguito di inserimento volontario
+     dell’Utente o dall’Interessato. I dati sono trattati secondo le modalità di seguito riportate.
+  </p>
 
-    <h5>  Titolare del Trattamento dei Dati:</h5>
+  <h5>  Titolare del Trattamento dei Dati:</h5>
 
-    <p>Boolean SRLS</p>
-    <p>Piazzale Giovanni dalle Bande Nere, 9</p>
-    <p>20146, Milano</p>
-    <p>P.IVA: 10214930967</p>
-    <p>ciao@boolean.careers</p>
+  <p>Boolean SRLS</p>
+  <p>Piazzale Giovanni dalle Bande Nere, 9</p>
+  <p>20146, Milano</p>
+  <p>P.IVA: 10214930967</p>
+  <p>ciao@boolean.careers</p>
 
-    <h5>Tipologie di Dati</h5>
+  <h5>Tipologie di Dati</h5>
 
-    <p>I Dati che potrebbero essere raccolti dal presente Sito sono il nome,
-       il cognome, l’indirizzo, il telefono, l’email, il fax, il codice fiscale,
-       l’indirizzo IP ed altri Dati riferibili alle generalità dell’Utente o
-       alle modalità tecniche di accesso dell’Utente al Sito. Altri dati
-       raccolti per il completamento del profilo di ogni utente (denominato
-       “Studente”) riguardano la propria professionalità ed includono,
-        a titolo esemplificativo: titolo di studio, età, anni di esperienza
-         lavorativa e informazioni curriculari. I Dati di navigazione utili
-          per l’utilizzo tecnico del Sito, sono raccolti necessariamente e
-          il loro conferimento non è facoltativo. Il mancato trattamento di
-          alcuni Dati (es. i dati di contatto, o gli indirizzi, o dati sul
-          comportamento o sulle preferenze dell’utente ecc.) potrebbe rendere
-           impossibile la prestazione dei servizi da parte del Sito. Se
-            l’Utente utilizza il Sito per pubblicare o comunque condividere
-            Dati personali di terzi, (Interessati diversi dall’Utente) ne
-             assume le relative responsabilità. In tal senso, l’Utente
-             garantisce di avere il diritto di comunicare o diffondere
-             i Dati personali dei terzi e di averli previamente informati
-              del trattamento, sollevando il Sito da ogni responsabilità
-              per il loro trattamento strumentale in seguito alla loro
-              comunicazione o diffusione.</p>
+  <p>I Dati che potrebbero essere raccolti dal presente Sito sono il nome,
+     il cognome, l’indirizzo, il telefono, l’email, il fax, il codice fiscale,
+     l’indirizzo IP ed altri Dati riferibili alle generalità dell’Utente o
+     alle modalità tecniche di accesso dell’Utente al Sito. Altri dati
+     raccolti per il completamento del profilo di ogni utente (denominato
+     “Studente”) riguardano la propria professionalità ed includono,
+      a titolo esemplificativo: titolo di studio, età, anni di esperienza
+       lavorativa e informazioni curriculari. I Dati di navigazione utili
+        per l’utilizzo tecnico del Sito, sono raccolti necessariamente e
+        il loro conferimento non è facoltativo. Il mancato trattamento di
+        alcuni Dati (es. i dati di contatto, o gli indirizzi, o dati sul
+        comportamento o sulle preferenze dell’utente ecc.) potrebbe rendere
+         impossibile la prestazione dei servizi da parte del Sito. Se
+          l’Utente utilizza il Sito per pubblicare o comunque condividere
+          Dati personali di terzi, (Interessati diversi dall’Utente) ne
+           assume le relative responsabilità. In tal senso, l’Utente
+           garantisce di avere il diritto di comunicare o diffondere
+           i Dati personali dei terzi e di averli previamente informati
+            del trattamento, sollevando il Sito da ogni responsabilità
+            per il loro trattamento strumentale in seguito alla loro
+            comunicazione o diffusione.</p>
 
-    <h5>Finalità del Trattamento</h5>
+  <h5>Finalità del Trattamento</h5>
 
-    <p>I Dati dell’Utente o dell’Interessato sono raccolti per consentire:</p>
+  <p>I Dati dell’Utente o dell’Interessato sono raccolti per consentire:</p>
 
-    <ul>
-      <li>l’erogazione del servizio;</li>
-      <li>la risposta a specifiche richieste informative dell’Utente;</li>
-      <li>l’aggiornamento dell’Utente sui nuovi prodotti o servizi erogati dal
-         Sito o in relazione a particolari offerte commerciali;</li>
-      <li>l’informazione dell’Utente in occasione di manutenzione sul Sito
-        o di eventuali disservizi;</li>
-      <li>l’eventuale profilazione commerciale dell’Utente;</li>
-      <li>la visualizzazione di banner pubblicitari in relazione agli
-        interessi dell’Utente (behavioral targeting/advertising);</li>
-      <li>la difesa da parte del Titolare del Sito, in giudizio o nelle
-        fasi propedeutiche alla sua eventuale instaurazione, da abusi nell
-        ’utilizzo dello stesso o dei servizi connessi da parte dell’Utente.</li>
-    </ul>
+  <ul>
+    <li>l’erogazione del servizio;</li>
+    <li>la risposta a specifiche richieste informative dell’Utente;</li>
+    <li>l’aggiornamento dell’Utente sui nuovi prodotti o servizi erogati dal
+       Sito o in relazione a particolari offerte commerciali;</li>
+    <li>l’informazione dell’Utente in occasione di manutenzione sul Sito
+      o di eventuali disservizi;</li>
+    <li>l’eventuale profilazione commerciale dell’Utente;</li>
+    <li>la visualizzazione di banner pubblicitari in relazione agli
+      interessi dell’Utente (behavioral targeting/advertising);</li>
+    <li>la difesa da parte del Titolare del Sito, in giudizio o nelle
+      fasi propedeutiche alla sua eventuale instaurazione, da abusi nell
+      ’utilizzo dello stesso o dei servizi connessi da parte dell’Utente.</li>
+  </ul>
 
-    <p>Alcuni di questi trattamenti (invio di comunicazioni promozionali,
-      profilazione commerciale, behavioral advertising, geolocalizzazione ecc.)
-      potrebbero richiedere il consenso espresso dell’Utente o dell’Interessato.
-       Informative specifiche potrebbero essere presentate nelle pagine del Sito
-        in relazione a particolari servizi o trattamenti dei Dati forniti dall’Utente o dall’Interessato</p>
+  <p>Alcuni di questi trattamenti (invio di comunicazioni promozionali,
+    profilazione commerciale, behavioral advertising, geolocalizzazione ecc.)
+    potrebbero richiedere il consenso espresso dell’Utente o dell’Interessato.
+     Informative specifiche potrebbero essere presentate nelle pagine del Sito
+      in relazione a particolari servizi o trattamenti dei Dati forniti dall’Utente o dall’Interessato</p>
 
-    <h5>Servizi forniti dal sito</h5>
+  <h5>Servizi forniti dal sito</h5>
 
-    <p>L’Utilizzo dei Dati per ulteriori finalità da parte del Titolare,
-       o per servizi per i quali è necessaria la collaborazione di soggetti
-       terzi, che sono di seguito indicati, potrebbe in alcuni casi richiedere
-        il consenso libero e specifico dell’Utente o dell’Interessato. Questi
-        servizi, forniti da soggetti terzi, consentono al Sito di gestire e
-        monitorare elenchi d’indirizzi email utilizzati per comunicare con
-        l’Utente tramite posta elettronica.</p>
+  <p>L’Utilizzo dei Dati per ulteriori finalità da parte del Titolare,
+     o per servizi per i quali è necessaria la collaborazione di soggetti
+     terzi, che sono di seguito indicati, potrebbe in alcuni casi richiedere
+      il consenso libero e specifico dell’Utente o dell’Interessato. Questi
+      servizi, forniti da soggetti terzi, consentono al Sito di gestire e
+      monitorare elenchi d’indirizzi email utilizzati per comunicare con
+      l’Utente tramite posta elettronica.</p>
 
-    <h5>Direct Email Marketing (DEM)</h5>
+  <h5>Direct Email Marketing (DEM)</h5>
 
-    <p>Questo Sito può utilizzare i Dati dell’Utente, se dallo stesso
-      previamente autorizzato, per inviare proposte di natura
-      commerciale in relazione a servizi e prodotti forniti da
-       terze parti. In caso di promozione di prodotti o servizi del
-        titolare analoghi a quelli venduti all’interessato non è
-        necessario il consenso, ma l’interessato, può opporsi in
-        ogni momento a nuovi invii. I dati personali raccolti sono:
-         Email, Cookie, Indirizzo IP, Nome e Cognome.</p>
+  <p>Questo Sito può utilizzare i Dati dell’Utente, se dallo stesso
+    previamente autorizzato, per inviare proposte di natura
+    commerciale in relazione a servizi e prodotti forniti da
+     terze parti. In caso di promozione di prodotti o servizi del
+      titolare analoghi a quelli venduti all’interessato non è
+      necessario il consenso, ma l’interessato, può opporsi in
+      ogni momento a nuovi invii. I dati personali raccolti sono:
+       Email, Cookie, Indirizzo IP, Nome e Cognome.</p>
 
-    <h5>Registrazione</h5>
+  <h5>Registrazione</h5>
 
-    <p>Mediante la registrazione l’Utente acconsente a fornire i propri Dati
-      per l’esecuzione dei servizi prestati e/o per l’acquisto dei prodotti
-      venduti sul presente Sito. I dati personali raccolti sono: Nome, Cognome,
-       Data di Nascita, Numero di Telefono, Indirizzo di Residenza o di
-       esercitazione della professione, Username, Email, Password,
-        Ragione sociale, Codice Fiscale, Partita IVA e Professione.</p>
+  <p>Mediante la registrazione l’Utente acconsente a fornire i propri Dati
+    per l’esecuzione dei servizi prestati e/o per l’acquisto dei prodotti
+    venduti sul presente Sito. I dati personali raccolti sono: Nome, Cognome,
+     Data di Nascita, Numero di Telefono, Indirizzo di Residenza o di
+     esercitazione della professione, Username, Email, Password,
+      Ragione sociale, Codice Fiscale, Partita IVA e Professione.</p>
 
-    <h5>Servizi forniti da soggetti terzi, che possono avere accesso ai Dati</h5>
+  <h5>Servizi forniti da soggetti terzi, che possono avere accesso ai Dati</h5>
 
-    <p>Tramite il presente Sito sono messi a disposizione degli Utenti alcuni
-      servizi forniti da terzi. La raccolta e l’uso delle informazioni da parte
-       di tali terzi sono regolati dalle rispettive informative privacy.</p>
+  <p>Tramite il presente Sito sono messi a disposizione degli Utenti alcuni
+    servizi forniti da terzi. La raccolta e l’uso delle informazioni da parte
+     di tali terzi sono regolati dalle rispettive informative privacy.</p>
 
-    <h5>Pubblicità</h5>
+  <h5>Pubblicità</h5>
 
-    <p>Questi servizi, forniti da soggetti terzi, possono consentire al Sito
-      di utilizzare i Dati dell’Utente per finalità di comunicazione commerciale
-      visualizzate sotto forma di banner e altre forme pubblicitarie sul Sito
-      in relazione agli interessi dell’Utente.</p>
+  <p>Questi servizi, forniti da soggetti terzi, possono consentire al Sito
+    di utilizzare i Dati dell’Utente per finalità di comunicazione commerciale
+    visualizzate sotto forma di banner e altre forme pubblicitarie sul Sito
+    in relazione agli interessi dell’Utente.</p>
 
-    <h5>Statistica</h5>
+  <h5>Statistica</h5>
 
-    <p>I servizi contenuti nella presente sezione, forniti da soggetti terzi,
-      servono a tener traccia del comportamento dell’Utente ed, in caso di profilazione,
-       possono richiedere il consenso espresso dell’Utente.</p>
+  <p>I servizi contenuti nella presente sezione, forniti da soggetti terzi,
+    servono a tener traccia del comportamento dell’Utente ed, in caso di profilazione,
+     possono richiedere il consenso espresso dell’Utente.</p>
 
-    <h5>Google Analytics</h5>
+  <h5>Google Analytics</h5>
 
-    <p>Google Analytics utilizza i cookies per raccogliere e analizzare in forma
-      anonima le informazioni sui comportamenti di utilizzo del sito boolean.careers
-       (compreso l’indirizzo IP dell’utente). Le informazioni raccolte ed elaborate
-        da Google Analytics consentono a noi di redigere report riguardanti le
-        attività condotte su boolean.careers. Questo sito non utilizza (e non
-        consente a terzi di utilizzare) lo strumento di analisi di Google per
-         Google non associa l’indirizzo IP a nessun altro dato posseduto da Google,
-         monitorare o per raccogliere informazioni personali di identificazione.
-          né cerca di collegare gli indirizzi IP alle identità degli utenti.
-           Google può comunicare queste informazioni a terzi ove ciò sia
-           imposto dalla legge o laddove il terzo tratti le suddette
-           informazioni per conto di Google.</p>
+  <p>Google Analytics utilizza i cookies per raccogliere e analizzare in forma
+    anonima le informazioni sui comportamenti di utilizzo del sito boolean.careers
+     (compreso l’indirizzo IP dell’utente). Le informazioni raccolte ed elaborate
+      da Google Analytics consentono a noi di redigere report riguardanti le
+      attività condotte su boolean.careers. Questo sito non utilizza (e non
+      consente a terzi di utilizzare) lo strumento di analisi di Google per
+       Google non associa l’indirizzo IP a nessun altro dato posseduto da Google,
+       monitorare o per raccogliere informazioni personali di identificazione.
+        né cerca di collegare gli indirizzi IP alle identità degli utenti.
+         Google può comunicare queste informazioni a terzi ove ciò sia
+         imposto dalla legge o laddove il terzo tratti le suddette
+         informazioni per conto di Google.</p>
 
-    <p>  Per ulteriori informazioni, si rinvia ai link di seguito indicati:
-      Partners Answers Puoi disabilitare in modo selettivo l’azione di Google
-       Analytics installando sul tuo browser la componente di opt-out fornita
-        da Google. Ti invitiamo, pertanto, ove tu voglia disabilitare l’azione
-         di Google Analytics, di accedere al link seguito indicato: Gaoptaut</p>
+  <p>  Per ulteriori informazioni, si rinvia ai link di seguito indicati:
+    Partners Answers Puoi disabilitare in modo selettivo l’azione di Google
+     Analytics installando sul tuo browser la componente di opt-out fornita
+      da Google. Ti invitiamo, pertanto, ove tu voglia disabilitare l’azione
+       di Google Analytics, di accedere al link seguito indicato: Gaoptaut</p>
 
-    <h5>Social plugin</h5>
+  <h5>Social plugin</h5>
 
-    <p>I social plugin attivano funzionalità di condivisione generate
-      direttamente dalle piattaforme di social network ed integrate
-      nella pagina del sito ospitante. La presenza di questi plugin
-      comporta la trasmissione di cookies da e verso tutti i siti
-      gestiti da terze parti. La gestione delle informazioni raccolte
-      è disciplinata dalle relative informative cui ti preghiamo di
-       fare riferimento.</p>
+  <p>I social plugin attivano funzionalità di condivisione generate
+    direttamente dalle piattaforme di social network ed integrate
+    nella pagina del sito ospitante. La presenza di questi plugin
+    comporta la trasmissione di cookies da e verso tutti i siti
+    gestiti da terze parti. La gestione delle informazioni raccolte
+    è disciplinata dalle relative informative cui ti preghiamo di
+     fare riferimento.</p>
 
-    <a href="">Google+: Link</a>
+  <a href="">Google+: Link</a>
 
-    <h5>Fonte dei dati</h5>
+  <h5>Fonte dei dati</h5>
 
-    <p>I dati sono raccolti direttamente da Boolean SRLS da fonti pubbliche
-      (se relativi allo Studente) e attraverso la compilazione volontaria del
-      modulo di registrazione/iscrizione. La raccolta dei dati pubblici viene
-      regolata dal Garante della Privacy: ”[...] la legge n. 675/1996 non ha
-      modificato la disciplina legislativa relativa al regime di pubblicità
-      degli albi professionali ed alla conoscibilità degli atti ad essi
-      connessi e che gli albi professionali sono destinati per la loro natura
-      e funzione ad un regime di piena conoscibilità da parte di chiunque,
-      anche in funzione della tutela dei diritti di coloro che a vario titolo
-      hanno rapporti con gli iscritti.”</p>
+  <p>I dati sono raccolti direttamente da Boolean SRLS da fonti pubbliche
+    (se relativi allo Studente) e attraverso la compilazione volontaria del
+    modulo di registrazione/iscrizione. La raccolta dei dati pubblici viene
+    regolata dal Garante della Privacy: ”[...] la legge n. 675/1996 non ha
+    modificato la disciplina legislativa relativa al regime di pubblicità
+    degli albi professionali ed alla conoscibilità degli atti ad essi
+    connessi e che gli albi professionali sono destinati per la loro natura
+    e funzione ad un regime di piena conoscibilità da parte di chiunque,
+    anche in funzione della tutela dei diritti di coloro che a vario titolo
+    hanno rapporti con gli iscritti.”</p>
 
-      <h5>Diritti del titolare dei dati</h5>
+    <h5>Diritti del titolare dei dati</h5>
 
-      <p>Il soggetto cui si riferiscono i dati personali ha il diritto di ottenere
-        da Boolean SRLS la conferma dell’esistenza o meno di dati personali che lo
-        riguardano, anche se non ancora registrati, e la loro comunicazione in
-        forma comprensibile; l’indicazione dell’origine dei dati personali,
-        delle finalità e modalità del trattamento,
-        della logica applicata, in caso di trattamento effettuato con l’ausilio
-        di strumenti elettronici, nonché dei soggetti o delle categorie di soggetti
-        ai quali i dati personali possono essere comunicati o che possono venirne
-        a conoscenza in qualità di responsabili o incaricati; la cancellazione,
-        la trasformazione in forma anonima o il blocco dei dati trattati in
-        violazione di legge, nonché l’aggiornamento, la rettificazione ovvero,
-        qualora vi abbia interesse, l’integrazione dei dati. Per l’esercizio
-        dei diritti sopracitati il soggetto può rivolgersi a Boolean SRLS,
-        via Svizzera 2, Carpi (MO) ovvero scrivendo a info@boolean.careers</p>
+    <p>Il soggetto cui si riferiscono i dati personali ha il diritto di ottenere
+      da Boolean SRLS la conferma dell’esistenza o meno di dati personali che lo
+      riguardano, anche se non ancora registrati, e la loro comunicazione in
+      forma comprensibile; l’indicazione dell’origine dei dati personali,
+      delle finalità e modalità del trattamento,
+      della logica applicata, in caso di trattamento effettuato con l’ausilio
+      di strumenti elettronici, nonché dei soggetti o delle categorie di soggetti
+      ai quali i dati personali possono essere comunicati o che possono venirne
+      a conoscenza in qualità di responsabili o incaricati; la cancellazione,
+      la trasformazione in forma anonima o il blocco dei dati trattati in
+      violazione di legge, nonché l’aggiornamento, la rettificazione ovvero,
+      qualora vi abbia interesse, l’integrazione dei dati. Per l’esercizio
+      dei diritti sopracitati il soggetto può rivolgersi a Boolean SRLS,
+      via Svizzera 2, Carpi (MO) ovvero scrivendo a info@boolean.careers</p>
 
-        <h5>Informazioni su questa privacy policy</h5>
+      <h5>Informazioni su questa privacy policy</h5>
 
-        <p>La presente informativa privacy è redatta in via autonoma e con piena assunzione di responsabilità dal Titolare del Trattamento dei Dati.</p>
+      <p>La presente informativa privacy è redatta in via autonoma e con piena assunzione di responsabilità dal Titolare del Trattamento dei Dati.</p>
 
-        <h5>Sicurezza</h5>
+      <h5>Sicurezza</h5>
 
-        <p>Per proteggere i vostri dati personali contro la distruzione,
-          la perdita o l’alterazione accidentale o impropria, e contro
-          l’accesso o la divulgazione non autorizzati, boolean.careers
-          ha previsto misure di sicurezza di natura tecnica e organizzativa.</p>
+      <p>Per proteggere i vostri dati personali contro la distruzione,
+        la perdita o l’alterazione accidentale o impropria, e contro
+        l’accesso o la divulgazione non autorizzati, boolean.careers
+        ha previsto misure di sicurezza di natura tecnica e organizzativa.</p>
 
-          <h5>Link ad altri Siti Web</h5>
+        <h5>Link ad altri Siti Web</h5>
 
-          <p>Sulle pagine web di boolean.careers si possono trovare collegamenti
-             ipertestuali (Hyperlink) con altri siti web, proposti per fornire
-             un migliore servizio ai propri utenti. boolean.careers non è in
-             alcun modo responsabile del contenuto dei siti web ai quali gli
-             utenti dovessero eventualmente accedere tramite il proprio sito.
-              L’esistenza di un Hyperlink verso un altro sito non sottintende
-               quindi approvazione od accettazione di responsabilità da parte
-               di boolean.careers circa il contenuto del nuovo sito cui si accede,
-                anche in relazione alla politica adottata per il trattamento
-                dei dati personali, nonché alla sua utilizzazione.</p>
+        <p>Sulle pagine web di boolean.careers si possono trovare collegamenti
+           ipertestuali (Hyperlink) con altri siti web, proposti per fornire
+           un migliore servizio ai propri utenti. boolean.careers non è in
+           alcun modo responsabile del contenuto dei siti web ai quali gli
+           utenti dovessero eventualmente accedere tramite il proprio sito.
+            L’esistenza di un Hyperlink verso un altro sito non sottintende
+             quindi approvazione od accettazione di responsabilità da parte
+             di boolean.careers circa il contenuto del nuovo sito cui si accede,
+              anche in relazione alla politica adottata per il trattamento
+              dei dati personali, nonché alla sua utilizzazione.</p>
 
-          <h5>Definizioni e riferimenti legali</h5>
+        <h5>Definizioni e riferimenti legali</h5>
 
-          <p>Cookie - Il cookie è una porzione di dati che viene memorizzata su un
-            computer o un device mobile quando navighi in internet, affinché il
-            computer o il device mobile possa essere riconosciuto in un momento
-            successivo. I cookies da noi utilizzati non ti profilano, non ti
-            identificano, ma si limitano a riconoscere esclusivamente il dispositivo
-            che utilizzi. I cookies non danneggiano in alcun modo il tuo dispositivo,
-            ma abilitano molteplici importanti caratteristiche del Sito internet. Ti
-            permettono, ad esempio, di tornare alle pagine che avevi cercato; proteggono
-            boolean.careers; ricordano le tue preferenze; personalizzano il contenuto
-            del Sito in modo che sia più adatto a te. Utilizziamo i cookies, inoltre,
-            per raccogliere informazioni sul modo in cui utilizzi il Sito. Utilizziamo
-            queste informazioni esclusivamente per compilare rapporti e come ausilio
-            per migliorare il Sito. La raccolta avviene in forma anonima e riguarda
-            informazioni quali il numero di visitatori del Sito, da dove provengono
-            i visitatori, le pagine visitate. Un cookie non ci dà in nessun modo
-            accesso al tuo computer e non ci fornisce nessuna informazione su di te,
-            oltre ai dati che tu decidi di condividere con noi. Sei libero di
-            scegliere se accettare o meno i cookies. La maggior parte dei browser
-            accetta in automatico i cookies. E’ possibile modificare le
-            impostazioni del tuo browser allo scopo di rifiutare i cookies,
-            se lo preferisci. A tal fine ti invitiamo a consultare le seguenti pagine:</p>
+        <p>Cookie - Il cookie è una porzione di dati che viene memorizzata su un
+          computer o un device mobile quando navighi in internet, affinché il
+          computer o il device mobile possa essere riconosciuto in un momento
+          successivo. I cookies da noi utilizzati non ti profilano, non ti
+          identificano, ma si limitano a riconoscere esclusivamente il dispositivo
+          che utilizzi. I cookies non danneggiano in alcun modo il tuo dispositivo,
+          ma abilitano molteplici importanti caratteristiche del Sito internet. Ti
+          permettono, ad esempio, di tornare alle pagine che avevi cercato; proteggono
+          boolean.careers; ricordano le tue preferenze; personalizzano il contenuto
+          del Sito in modo che sia più adatto a te. Utilizziamo i cookies, inoltre,
+          per raccogliere informazioni sul modo in cui utilizzi il Sito. Utilizziamo
+          queste informazioni esclusivamente per compilare rapporti e come ausilio
+          per migliorare il Sito. La raccolta avviene in forma anonima e riguarda
+          informazioni quali il numero di visitatori del Sito, da dove provengono
+          i visitatori, le pagine visitate. Un cookie non ci dà in nessun modo
+          accesso al tuo computer e non ci fornisce nessuna informazione su di te,
+          oltre ai dati che tu decidi di condividere con noi. Sei libero di
+          scegliere se accettare o meno i cookies. La maggior parte dei browser
+          accetta in automatico i cookies. E’ possibile modificare le
+          impostazioni del tuo browser allo scopo di rifiutare i cookies,
+          se lo preferisci. A tal fine ti invitiamo a consultare le seguenti pagine:</p>
 
-            <ul class="list-unstyled">
-              <li><a>Chrome: Link</a></li>
-              <li><a>Firefox: Link</a></li>
-              <li><a>Internet Explorer: Link</a></li>
-              <li>  <a>Opera: Link</a></li>
-              <li><a>Safari: Link</a></li>
-            </ul>
+          <ul class="list-unstyled">
+            <li><a>Chrome: Link</a></li>
+            <li><a>Firefox: Link</a></li>
+            <li><a>Internet Explorer: Link</a></li>
+            <li>  <a>Opera: Link</a></li>
+            <li><a>Safari: Link</a></li>
+          </ul>
 
-            <p>Se decidi di non abilitare i cookies, la tua esperienza su boolean.careers potrebbe essere limitata.</p>
+          <p>Se decidi di non abilitare i cookies, la tua esperienza su boolean.careers potrebbe essere limitata.</p>
 
-            <h5>Dato Personale</h5>
+          <h5>Dato Personale</h5>
 
-            <p>Costituisce Dato personale qualunque informazione relativa a persona fisica identificata o identificabile,
-              anche indirettamente, mediante riferimento a qualsiasi altra informazione, ivi compreso un numero di
-              identificazione personale. Dato di Navigazione Sono i dati raccolti in maniera automatica dal Sito
-              tra i quali: gli indirizzi IP o i nomi a dominio dei computer utilizzati dall’Utente che si connette
-              al Sito, gli indirizzi in notazione URI (Uniform Resource Identifier), l’orario della richiesta,
-              il metodo utilizzato nel sottoporre la richiesta al server, la dimensione del file ottenuto in risposta,
-              il codice numerico indicante lo stato della risposta dal server (buon fine, errore, ecc.) il Paese di provenienza,
-              le caratteristiche del browser e del sistema operativo utilizzati dal visitatore, le varie connotazioni temporali
-              della visita (ad esempio il tempo di permanenza su ciascuna pagina) e i dettagli relativi all’itinerario
-              seguito all’interno del Sito con particolare riferimento alla sequenza delle pagine consultate
-              altri parametri relativi al sistema operativo e all’ambiente informatico dell’Utente.</p>
+          <p>Costituisce Dato personale qualunque informazione relativa a persona fisica identificata o identificabile,
+            anche indirettamente, mediante riferimento a qualsiasi altra informazione, ivi compreso un numero di
+            identificazione personale. Dato di Navigazione Sono i dati raccolti in maniera automatica dal Sito
+            tra i quali: gli indirizzi IP o i nomi a dominio dei computer utilizzati dall’Utente che si connette
+            al Sito, gli indirizzi in notazione URI (Uniform Resource Identifier), l’orario della richiesta,
+            il metodo utilizzato nel sottoporre la richiesta al server, la dimensione del file ottenuto in risposta,
+            il codice numerico indicante lo stato della risposta dal server (buon fine, errore, ecc.) il Paese di provenienza,
+            le caratteristiche del browser e del sistema operativo utilizzati dal visitatore, le varie connotazioni temporali
+            della visita (ad esempio il tempo di permanenza su ciascuna pagina) e i dettagli relativi all’itinerario
+            seguito all’interno del Sito con particolare riferimento alla sequenza delle pagine consultate
+            altri parametri relativi al sistema operativo e all’ambiente informatico dell’Utente.</p>
 
-              <h5>Utente</h5>
+            <h5>Utente</h5>
 
-              <p>Indica il soggetto fruitore di servizi o di prodotti del Sito.</p>
+            <p>Indica il soggetto fruitore di servizi o di prodotti del Sito.</p>
 
-              <h5>Interessato</h5>
+            <h5>Interessato</h5>
 
-              <p>La persona fisica cui si riferiscono i Dati Personali.</p>
+            <p>La persona fisica cui si riferiscono i Dati Personali.</p>
 
-              <h5>Responsabile del Trattamento</h5>
+            <h5>Responsabile del Trattamento</h5>
 
-              <p>La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione od organismo preposti dal titolare al trattamento dei dati personali.</p>
+            <p>La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione od organismo preposti dal titolare al trattamento dei dati personali.</p>
 
-              <h5>Titolare del Trattamento</h5>
+            <h5>Titolare del Trattamento</h5>
 
-              <p>La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione od organismo cui competono, anche unitamente ad altro titolare, le decisioni in ordine alle finalità, alle modalità del trattamento di dati personali ed agli strumenti utilizzati, ivi compreso il profilo della sicurezza, in relazione al funzionamento e alla fruizione del presente Sito.</p>
-              <br>
-              __________________
-              <h5>Riferimenti legali</h5>
+            <p>La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione od organismo cui competono, anche unitamente ad altro titolare, le decisioni in ordine alle finalità, alle modalità del trattamento di dati personali ed agli strumenti utilizzati, ivi compreso il profilo della sicurezza, in relazione al funzionamento e alla fruizione del presente Sito.</p>
 
-              <p>La presente informativa privacy è redatta in adempimento degli obblighi previsti dall’Art. 10 della Direttiva n. 95/46/CE, nonché a quanto previsto dalla Direttiva 2002/58/CE, come aggiornata dalla Direttiva 2009/136/CE e della relativa normativa italiana di recepimento, in materia di cookie. La presente informativa privacy riguarda esclusivamente il Sito e non s’intende riferita ad altri Siti i cui collegamenti sono eventualmente contenuti nello stesso.</p>
+            <br>
+            __________________
+            <h5>Riferimenti legali</h5>
 
-            </section>
+            <p>La presente informativa privacy è redatta in adempimento degli obblighi previsti dall’Art. 10 della Direttiva n. 95/46/CE, nonché a quanto previsto dalla Direttiva 2002/58/CE, come aggiornata dalla Direttiva 2009/136/CE e della relativa normativa italiana di recepimento, in materia di cookie. La presente informativa privacy riguarda esclusivamente il Sito e non s’intende riferita ad altri Siti i cui collegamenti sono eventualmente contenuti nello stesso.</p>
 
-          @endsection
+          </section>
+
+        @endsection

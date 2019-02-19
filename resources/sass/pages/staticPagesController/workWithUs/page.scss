@@ -1,0 +1,11 @@
+.lavora_con_noi.main_content{
+  h1, h5, p , li {
+    margin-bottom: $smallerFontSize;
+  }
+  h1 {
+    font-weight: $boldestFont;
+  }
+  h5 {
+    font-weight: $bolderFont;
+  }
+}

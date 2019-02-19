@@ -16438,6 +16438,12 @@ a:hover {
   font-size: 1.3rem;
   background: #fd8d53;
   border-radius: 4px;
+  transition: 0.2s background;
+}
+
+.btn_orange:hover {
+  color: white;
+  background: #feae85;
 }
 
 .feature h1,
@@ -16515,9 +16521,33 @@ nav.navbar .navbar-collapse .btn_orange {
   margin: 30px;
 }
 
-.privacy_policy h1,
-.privacy_policy p,
-.privacy_policy li {
+.privacy_policy.main_content h1,
+.privacy_policy.main_content h5,
+.privacy_policy.main_content p,
+.privacy_policy.main_content li {
   margin-bottom: 0.8rem;
+}
+
+.privacy_policy.main_content h1 {
+  font-weight: 800;
+}
+
+.privacy_policy.main_content h5 {
+  font-weight: 600;
+}
+
+.lavora_con_noi.main_content h1,
+.lavora_con_noi.main_content h5,
+.lavora_con_noi.main_content p,
+.lavora_con_noi.main_content li {
+  margin-bottom: 0.8rem;
+}
+
+.lavora_con_noi.main_content h1 {
+  font-weight: 800;
+}
+
+.lavora_con_noi.main_content h5 {
+  font-weight: 600;
 }
 

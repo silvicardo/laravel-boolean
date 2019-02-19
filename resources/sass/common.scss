@@ -87,6 +87,11 @@
   font-size: $biggerFontSize;
   background: $booleanOrange;
   border-radius: 4px;
+  transition: 0.2s background;
+  &:hover {
+    color: white;
+    background: lighten($booleanOrange, 10%);
+  }
 }
 
 .feature {

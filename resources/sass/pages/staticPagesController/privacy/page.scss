@@ -1,5 +1,11 @@
-.privacy_policy {
-  h1, p , li {
+.privacy_policy.main_content{
+  h1, h5, p , li {
     margin-bottom: $smallerFontSize;
+  }
+  h1 {
+    font-weight: $boldestFont;
+  }
+  h5 {
+    font-weight: $bolderFont;
   }
 }
