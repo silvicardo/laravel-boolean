@@ -2,10 +2,9 @@
   h1, h5, p , li {
     margin-bottom: $smallerFontSize;
   }
-  h1 {
+  h1, h5, span {
     font-weight: $boldestFont;
   }
-  h5 {
-    font-weight: $bolderFont;
-  }
+
+
 }

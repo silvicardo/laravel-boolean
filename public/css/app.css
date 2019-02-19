@@ -16543,11 +16543,9 @@ nav.navbar .navbar-collapse .btn_orange {
   margin-bottom: 0.8rem;
 }
 
-.lavora_con_noi.main_content h1 {
+.lavora_con_noi.main_content h1,
+.lavora_con_noi.main_content h5,
+.lavora_con_noi.main_content span {
   font-weight: 800;
-}
-
-.lavora_con_noi.main_content h5 {
-  font-weight: 600;
 }
 
