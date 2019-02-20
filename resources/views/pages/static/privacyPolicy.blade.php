@@ -2,6 +2,8 @@
 
 @extends('layouts.baseLayout')
 
+@section('title', $title);
+
 @section('content')
 <section class="privacy_policy main_content container py-5">
   <h1>Privacy Policy</h1>

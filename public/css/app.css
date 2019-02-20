@@ -16549,3 +16549,48 @@ nav.navbar .navbar-collapse .btn_orange {
   font-weight: 800;
 }
 
+.studenti .studente {
+  border-radius: 12px;
+  width: 45%;
+  height: auto;
+  background: #1B3C59;
+}
+
+.studenti .studente img {
+  width: 80px;
+  height: 80px;
+}
+
+.studenti .studente .description a {
+  color: #2d6494;
+}
+
+.studenti .studente .description p {
+  color: white;
+}
+
+.studenti.singolo .studente {
+  border-radius: 12px;
+}
+
+.studenti.singolo .studente h1 {
+  color: white;
+}
+
+.studenti.singolo .studente img {
+  width: auto;
+  height: auto;
+}
+
+@media all and (max-width: 768px) {
+  .studenti .studente {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .studenti .studente .description {
+    margin-top: 1.6rem;
+    text-align: center;
+  }
+}
+

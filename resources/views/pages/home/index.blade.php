@@ -1,5 +1,7 @@
 @extends('layouts.baseLayout')
 
+@section('title', $title);
+
 @section('content')
 
   <section class="claim container py-5">

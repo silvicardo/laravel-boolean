@@ -2,6 +2,8 @@
 
 @extends('layouts.baseLayout')
 
+@section('title', $title);
+
 @section('content')
   <section class="lavora_con_noi main_content container py-5">
     <h1>Work With Us - Lavora con noi</h1>

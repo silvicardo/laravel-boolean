@@ -8,21 +8,11 @@
 
   <div class="collapse navbar-collapse" id="navbarsExample05">
     <ul class="navbar-nav ml-auto">
+      @foreach (config('navbarLinks') as $navLink => $routeName)
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('homePage') }}">Home</a>
+        <a class="nav-link" href="{{ route($routeName) }}">{{ $navLink }}</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ route('corso') }}">corso</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ route('metodo') }}">metodo</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ route('dopoIlCorso') }}">dopo il corso</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ route('faq') }}">faq</a>
-      </li>
+    @endforeach
     </ul>
     <a class="btn_orange text-capitalize" href="#">iscriviti</a>
   </div>

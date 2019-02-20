@@ -31,7 +31,7 @@
           <p class="text-white">Boolean** (my_new_job > my_old_job) // returns true</p>
         </div>
         <div class="col-lg-6">
-          <p class="text-white">Boolean SRLS - Piazzale Giovanni dalle Bande Nere, 9 - 20146, Milano - P.IVA: 10214930967</p>
+          <p class="text-white text-truncate">Boolean SRLS - Piazzale Giovanni dalle Bande Nere, 9 - 20146, Milano - P.IVA: 10214930967</p>
         </div>
       </div>
     </div>

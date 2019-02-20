@@ -22,3 +22,7 @@ Route::get('/faq','HomeController@faq')->name('faq');
 //Rotte StaticPagesController
 Route::get('/privacy-policy','StaticPagesController@privacyPolicy')->name('privacyPolicy');
 Route::get('/lavora-con-noi','StaticPagesController@lavoraConNoi')->name('lavoraConNoi');
+
+//Rotte StudentsController
+Route::get('/studenti','StudentsController@index')->name('studenti');
+Route::get('/studenti/{slug}','StudentsController@getBySlug')->name('studentePerSlug');
