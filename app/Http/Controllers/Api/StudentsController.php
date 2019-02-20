@@ -8,6 +8,14 @@ use App\Http\Controllers\Controller;
 class StudentsController extends Controller
 {
 
+  public function allStudents(Request $request) {
+
+    $data =  (!empty(config('studenti'))) ? ['studenti' => config('studenti')] : ['Error' =>'Slug non valido'];
+
+    return response()->json($data);
+
+  }
+
     public function byGender(Request $request) {
 
 

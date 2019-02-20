@@ -61066,6 +61066,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Student__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Student */ "./resources/js/components/Student.js");
+/* harmony import */ var _components_StudentsList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/StudentsList */ "./resources/js/components/StudentsList.js");
+
 
 
 
@@ -61073,21 +61075,32 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 $(document).ready(function () {
-  //Se siamo nella pagina show dello studente,
-  //richiamiamo la pagina
+  //PAGINA STUDENTE SINGOLO
   if (document.getElementById('studenteSingolo')) {
-    var renderStudent = function renderStudent(jsonStudents) {
-      var student = jsonStudents.studenti[0];
-      console.log(student);
-      {
-        /* SPREAD ATTRIBUTES:
-         Passiamo tutti le chiavi e valori come attributi al tag grazie allo spread operator */
-      }
-      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Student__WEBPACK_IMPORTED_MODULE_2__["default"], student), document.getElementById('studenteSingolo'));
-    };
-
     var slug = $('#studenteSingolo').attr('data-slug');
     $.getJSON("http://localhost:8000/api/studenti/by-slug?slug=".concat(slug), renderStudent);
+  } //PAGINA STUDENTI
+
+
+  if (document.getElementById('studenti')) {
+    $.getJSON("http://localhost:8000/api/studenti", renderStudents);
+  } //FUNZIONI
+
+
+  function renderStudent(jsonStudents) {
+    var student = jsonStudents.studenti[0];
+    console.log(student);
+    {
+      /* SPREAD ATTRIBUTES:
+       Passiamo tutti le chiavi e valori come attributi al tag grazie allo spread operator */
+    }
+    react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Student__WEBPACK_IMPORTED_MODULE_2__["default"], student), document.getElementById('studenteSingolo'));
+  }
+
+  function renderStudents(jsonStudents) {
+    react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_StudentsList__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      studenti: jsonStudents.studenti
+    }), document.getElementById('studenti'));
   }
 });
 
@@ -61236,6 +61249,75 @@ Studente.defaultProps = {
 
 /***/ }),
 
+/***/ "./resources/js/components/StudentCardDescription.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/StudentCardDescription.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return StudentCard; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var StudentCard =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(StudentCard, _Component);
+
+  function StudentCard() {
+    _classCallCheck(this, StudentCard);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(StudentCard).apply(this, arguments));
+  }
+
+  _createClass(StudentCard, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          name = _this$props.name,
+          azienda = _this$props.azienda,
+          slug = _this$props.slug;
+      var url = "http://localhost:8000/studenti/".concat(slug);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "description"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: url
+      }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ora \xE8 web developer in ", this.props.azienda));
+    }
+  }]);
+
+  return StudentCard;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/StudentDescription.js":
 /*!*******************************************************!*\
   !*** ./resources/js/components/StudentDescription.js ***!
@@ -61296,6 +61378,149 @@ function (_Component) {
   }]);
 
   return StudentDescription;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/StudentListCard.js":
+/*!****************************************************!*\
+  !*** ./resources/js/components/StudentListCard.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return StudentListCard; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _StudentCardDescription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StudentCardDescription */ "./resources/js/components/StudentCardDescription.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var StudentListCard =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(StudentListCard, _Component);
+
+  function StudentListCard() {
+    _classCallCheck(this, StudentListCard);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(StudentListCard).apply(this, arguments));
+  }
+
+  _createClass(StudentListCard, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "studente d-flex justify-content-around align-items-center p-3 mb-5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "rounded-circle mr-4",
+        src: this.props.img,
+        alt: "studente"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_StudentCardDescription__WEBPACK_IMPORTED_MODULE_2__["default"], this.props));
+    }
+  }]);
+
+  return StudentListCard;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/StudentsList.js":
+/*!*************************************************!*\
+  !*** ./resources/js/components/StudentsList.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return StudentsList; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _StudentDescription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StudentDescription */ "./resources/js/components/StudentDescription.js");
+/* harmony import */ var _StudentListCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StudentListCard */ "./resources/js/components/StudentListCard.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+var StudentsList =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(StudentsList, _Component);
+
+  function StudentsList() {
+    _classCallCheck(this, StudentsList);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(StudentsList).apply(this, arguments));
+  }
+
+  _createClass(StudentsList, [{
+    key: "render",
+    value: function render() {
+      var studenti = this.props.studenti;
+      console.log(studenti);
+      var studentsList = studenti.map(function (stud, index) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_StudentListCard__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
+          key: stud.slug
+        }, stud));
+      });
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "listaStudenti container d-flex flex-wrap justify-content-between"
+      }, studentsList);
+    }
+  }]);
+
+  return StudentsList;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
