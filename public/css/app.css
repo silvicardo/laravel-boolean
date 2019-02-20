@@ -16580,6 +16580,7 @@ nav.navbar .navbar-collapse .btn_orange {
 .studenti.singolo .studente img {
   width: auto;
   height: auto;
+  max-width: 90%;
 }
 
 @media all and (max-width: 768px) {

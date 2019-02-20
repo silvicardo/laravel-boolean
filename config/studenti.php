@@ -2,6 +2,14 @@
 <?php
 return [
     [
+    'name' => 'Riccardo Silvi',
+    'slug' => 'riccardo-silvi',
+    'age' => 32,
+    'azienda' => 'Boolean Careers',
+    'img' => 'https://avatars0.githubusercontent.com/u/30217274?s=460&v=4',
+    'gender' => 'm'
+    ],
+    [
         'name' => 'Alessandro Biagini',
         'slug' => 'alessandro-biagini',
         'age' => 24,

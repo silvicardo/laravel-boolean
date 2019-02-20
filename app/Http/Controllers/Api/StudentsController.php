@@ -26,4 +26,21 @@ class StudentsController extends Controller
 
       return response()->json($data);
     }
+
+    public function bySlug(Request $request) {
+
+      $slug = $request->all()['slug'];
+
+      foreach (config('studenti') as $studente) {
+
+        if ($studente['slug'] === $slug) {
+          $studentiTrovati[] = $studente;
+        }
+      }
+
+      $data =  (!empty($studentiTrovati)) ? ['studenti' => $studentiTrovati] : ['Error' =>'Slug non valido'];
+
+      return response()->json($data);
+
+    }
 }

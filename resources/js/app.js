@@ -1,33 +1,30 @@
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Studente from './components/Student';
 require('./bootstrap');
 
-window.Vue = require('vue');
+$(document).ready(function(){
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+  //Se siamo nella pagina show dello studente,
+  //richiamiamo la pagina
+  if (document.getElementById('studenteSingolo')) {
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+    const slug = $('#studenteSingolo').attr('data-slug');
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+    $.getJSON(`http://localhost:8000/api/studenti/by-slug?slug=${slug}`, renderStudent)
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+    function renderStudent(jsonStudents) {
 
-const app = new Vue({
-    el: '#app'
+      const student = jsonStudents.studenti[0];
+
+      console.log(student);
+
+      {/* SPREAD ATTRIBUTES:
+        Passiamo tutti le chiavi e valori come attributi al tag grazie allo spread operator */}
+      ReactDOM.render(<Studente {...student} />, document.getElementById('studenteSingolo'));
+    }
+
+
+  }
 });

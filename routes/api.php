@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::get('studenti/by-gender','Api\StudentsController@byGender');
+Route::get('studenti/by-slug','Api\StudentsController@bySlug');
